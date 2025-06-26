@@ -15,5 +15,6 @@ public class CreateOrgTest {
 	public void createOrg() {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.flipkart.com");
+		driver.quit();
 	}
 }
