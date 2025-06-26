@@ -12,25 +12,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class CreateOrgTest {
 	
-	
-	
-	@BeforeClass
-	public static void setup() {
-	    WebDriverManager.chromedriver().clearDriverCache().setup();
-	    WebDriverManager.chromedriver().clearResolutionCache().setup();
-	}
 	@Test
 	public void createOrg() {
-		System.out.println("createorganizaion");
-		System.out.println(System.getProperty("url"));
-		System.out.println(System.getProperty("browser"));
-		System.out.println(System.getProperty("username"));
-		System.out.println(System.getProperty("password"));
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--headless");
-		options.addArguments("--disable-gpu");
-		options.addArguments("--no-sandbox");
-		options.addArguments("--disable-dev-shm-usage");
-		WebDriver driver = new ChromeDriver(options);
+		WebDriver driver = new ChromeDriver();
 	}
 }
