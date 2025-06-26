@@ -14,6 +14,6 @@ public class CreateOrgTest {
 	
 	@Test
 	public void createOrg() {
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver = new EdgeDriver();
 	}
 }
