@@ -14,6 +14,6 @@ public class CreateOrgTest {
 		System.out.println(System.getProperty("browser"));
 		System.out.println(System.getProperty("username"));
 		System.out.println(System.getProperty("password"));
-		WebDriver driver = new EdgeDriver();
+		WebDriver driver = new ChromeDriver();
 	}
 }
