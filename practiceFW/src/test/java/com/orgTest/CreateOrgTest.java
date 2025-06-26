@@ -1,5 +1,6 @@
 package com.orgTest;
 
+import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -7,7 +8,17 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class CreateOrgTest {
+	
+	
+	
+	@BeforeClass
+	public static void setup() {
+	    WebDriverManager.chromedriver().clearDriverCache().setup();
+	    WebDriverManager.chromedriver().clearResolutionCache().setup();
+	}
 	@Test
 	public void createOrg() {
 		System.out.println("createorganizaion");
