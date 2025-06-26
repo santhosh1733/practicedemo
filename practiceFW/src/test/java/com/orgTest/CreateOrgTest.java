@@ -13,7 +13,7 @@ public class CreateOrgTest {
 	
 	@Test(groups = "smoke")
 	public void createOrg() {
-		WebDriver driver = new EdgeDriver();
+		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.flipkart.com");
 	}
 }
