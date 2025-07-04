@@ -1,0 +1,7 @@
+docker run --rm -it -p 4444:4444 -p 7900:7900 --shm-size 2g selenium/standalone-chrome:beta
+
+docker run -d --net grid -e SE_EVENT_BUS_HOST=selenium-hub --shm-size="2g" selenium/node-chrome:4.33.0-20250606
+
+docker run -d --net grid -e SE_EVENT_BUS_HOST=selenium-hub --shm-size="2g" selenium/node-edge:4.33.0-20250606
+
+docker run -d --net grid -e SE_EVENT_BUS_HOST=selenium-hub --shm-size="2g" selenium/node-firefox:4.33.0-20250606
