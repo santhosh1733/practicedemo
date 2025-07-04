@@ -28,6 +28,7 @@ public void sampletest() throws MalformedURLException, InterruptedException {
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	driver.get("https://in.bookmyshow.com/explore/home/bengaluru");
+	System.out.println(driver.getCurrentUrl());
     driver.findElement(By.xpath("//span[text()='Bengaluru']")).click();
     driver.findElement(By.xpath("//span[text()='Bengaluru']/..//div")).click();
 	driver.close();

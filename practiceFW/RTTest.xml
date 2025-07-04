@@ -6,6 +6,7 @@
   <classes>
   <class name="com.orgTest.CreateOrgTest"/>
   <class name="com.productTest.CreateProductTest"/>
+  <class name="com.orgTest.browserstackcodeTest"/>
   <class name="com.verifyTest.CreateAndDeleteTest"/>
   </classes>
   </test> <!-- Test -->
