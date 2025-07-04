@@ -15,7 +15,6 @@ import com.beust.jcommander.Parameter;
 public class dockerTest {
 	RemoteWebDriver driver;
 	//@Parameters("browsername")
-@Test
 public void docker() throws MalformedURLException, InterruptedException {
 	URL ipadd = new URL("http://localhost:4444");
 	
