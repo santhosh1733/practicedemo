@@ -14,12 +14,12 @@ import com.beust.jcommander.Parameter;
 
 public class dockerTest {
 	RemoteWebDriver driver;
-	@Parameters("browsername")
+	//@Parameters("browsername")
 @Test
-public void docker(String bn) throws MalformedURLException, InterruptedException {
+public void docker() throws MalformedURLException, InterruptedException {
 	URL ipadd = new URL("http://localhost:4444");
 	
-	
+	String bn=System.getProperty("browser");
 	if(bn.equals("chrome")) {
 		ChromeOptions option=new ChromeOptions();
 		 driver=new RemoteWebDriver(ipadd,option);
