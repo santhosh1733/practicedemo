@@ -25,12 +25,12 @@ public void sampletest() throws MalformedURLException, InterruptedException {
 	String username="santhoshnagaraj_UHAQjl";
 	String password="9ms7ynKvxSP8qA6grxGw";
 	RemoteWebDriver driver=new RemoteWebDriver(new URL("https://"+username+":"+password+"@hub-cloud.browserstack.com/wd/hub"), capabilities);
-	Thread.sleep(3000);
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	driver.get("https://in.bookmyshow.com/explore/home/bengaluru");
-	//driver.findElement(By.xpath("(//*[local-name()='svg']/*[name()='path'])[2]")).click();
     driver.findElement(By.xpath("//span[text()='Bengaluru']")).click();
     driver.findElement(By.xpath("//span[text()='Bengaluru']/..//div")).click();
+	driver.close();
+   
 }
 }
